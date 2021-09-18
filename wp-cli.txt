@@ -10,3 +10,6 @@ Get specific event:
 
 Check WP-Cron working:
     wp cron test
+
+Get specific site metakey list:
+    wp site option list --site_id=1 --field=meta_key
