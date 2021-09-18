@@ -1,0 +1,2 @@
+// This condition can be added into the breakpoint in VSCode to avoid triggering debugger for ajax calls
+! wp_doing_ajax()
