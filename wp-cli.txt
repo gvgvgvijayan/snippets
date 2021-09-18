@@ -1,0 +1,3 @@
+User:
+    wp user session list gvgvgvijayan
+    wp user session destroy gvgvgvijayan --all
