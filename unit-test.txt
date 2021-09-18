@@ -1,0 +1,3 @@
+WP:
+	bin/install-wp-tests.sh database username password
+	vendor/bin/phpunit
