@@ -1,2 +1,5 @@
 #Delete first n lines from a file:
 	sed -i '1,3d' debug.log #Delete first three lines.
+
+#Grep search with exclude directory
+	grep -rin --exclude-dir={wp-content,.history} "'login_redirect'"
