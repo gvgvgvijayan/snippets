@@ -10,3 +10,6 @@ Repo Sync:
 	git merge parent_repo/branch-name
 	
 	git push -u origin branch-name
+
+Git get file history:
+	git log --follow -p --stat ./src/component/store/index.js
