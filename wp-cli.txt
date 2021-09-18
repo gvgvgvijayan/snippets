@@ -13,3 +13,10 @@ Check WP-Cron working:
 
 Get specific site metakey list:
     wp site option list --site_id=1 --field=meta_key
+
+Get Transient list:
+    Network:
+    wp transient list --human-readable --network
+    
+    Active site:
+    wp transient list --human-readable
