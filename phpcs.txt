@@ -1,0 +1,1 @@
+vendor/bin/phpcs -p --colors --extensions=php --standard=WordPress ./src/filename.php
