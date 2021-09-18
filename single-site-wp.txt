@@ -16,7 +16,7 @@ sudo cp 000-default.conf single.test.conf
         ServerAlias www.single.test
 
         ServerAdmin webmaster@localhost
-        DocumentRoot /var/www/html/single
+        DocumentRoot /var/www/html/single.test
 
         # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
         # error, crit, alert, emerg.
@@ -42,3 +42,12 @@ sudo a2ensite single.test.conf
 
 4) Restart apache
 sudo systemctl restart apache2
+
+5) Download WordPress core
+wp core download
+
+6) DB
+create database single_test;
+
+7) Site permission
+sudo chown -R www-data:www-data /var/www/html/single.test/
