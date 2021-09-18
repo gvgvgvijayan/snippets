@@ -3,3 +3,7 @@
 
 #Grep search with exclude directory
 	grep -rin --exclude-dir={wp-content,.history} "'login_redirect'"
+
+#Modify modified time and verify the modification
+	touch -m -d "100 days ago" wp-config.php
+	stat wp-config.php
