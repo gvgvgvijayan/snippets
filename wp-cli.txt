@@ -4,3 +4,6 @@ User:
 
 Get option:
     wp option get wdfscanignore
+    
+Get specific event:
+    wp cron event list | grep 'wpdef_sec_key_gen'
