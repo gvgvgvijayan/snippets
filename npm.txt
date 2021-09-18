@@ -1,0 +1,2 @@
+#Run dev with watching flag
+npm run dev -- -w
