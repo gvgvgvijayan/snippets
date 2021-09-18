@@ -13,3 +13,9 @@ Repo Sync:
 
 Git get file history:
 	git log --follow -p --stat ./src/component/store/index.js
+
+Git conflict resolve:
+	Modify your file with editor or git-diff tool
+	git add file1 file2
+	git commit -m "message"
+	git push
