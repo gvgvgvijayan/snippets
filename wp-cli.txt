@@ -7,3 +7,6 @@ Get option:
     
 Get specific event:
     wp cron event list | grep 'wpdef_sec_key_gen'
+
+Check WP-Cron working:
+    wp cron test
