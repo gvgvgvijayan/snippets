@@ -51,3 +51,6 @@ create database single_test;
 
 7) Site permission
 sudo chown -R www-data:www-data /var/www/html/single.test/
+
+8) Edit hosts file and map virtual host to 127.0.0.1
+127.0.0.1       single.test
