@@ -52,7 +52,10 @@ sudo systemctl restart apache2
 wp core download
 
 7) DB
-create database single_test;
+create database multi_test;
 
 8) Site permission
 sudo chown -R www-data:www-data /var/www/html/multi.test/
+
+9) Convert to multisite
+wp core multisite-convert
