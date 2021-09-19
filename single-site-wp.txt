@@ -40,17 +40,17 @@ sudo cp 000-default.conf single.test.conf
 3) Enable site
 sudo a2ensite single.test.conf
 
-4) Restart apache
+4) Edit hosts file and map virtual host to 127.0.0.1
+127.0.0.1       single.test
+
+5) Restart apache
 sudo systemctl restart apache2
 
-5) Download WordPress core
+6) Download WordPress core
 wp core download
 
-6) DB
+7) DB
 create database single_test;
 
-7) Site permission
+8) Site permission
 sudo chown -R www-data:www-data /var/www/html/single.test/
-
-8) Edit hosts file and map virtual host to 127.0.0.1
-127.0.0.1       single.test
