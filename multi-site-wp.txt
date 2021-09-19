@@ -86,3 +86,7 @@ RewriteRule ^(wp-(content|admin|includes).*) $1 [L]
 RewriteRule ^(.*\.php)$ $1 [L]
 RewriteRule . index.php [L]
 </IfModule>
+
+11) Set permalink style
+Set permalink for each sites to plain style
+http://site2.multi.test/wp-admin/options-permalink.php
