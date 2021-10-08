@@ -1,0 +1,2 @@
+Call a site with different user-agent & IP address:
+  curl -H "User-Agent:MJ12Bot" -H "X-Forwarded-For:127.0.0.2" http://single.test/
