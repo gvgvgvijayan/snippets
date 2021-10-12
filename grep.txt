@@ -1,0 +1,5 @@
+Exclude specific directories and search:
+  grep -rin --exclude-dir={wp-content,.history} "'login_redirect'" 
+  
+Exclude certain file type:
+  git grep 'send(' -- '*.php'
