@@ -1,0 +1,2 @@
+Filter:
+  ./vendor/bin/phpunit -c phpunit.xml --filter test_method_name
