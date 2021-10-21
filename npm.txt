@@ -1,2 +1,9 @@
 #Run dev with watching flag
 npm run dev -- -w
+
+#List package
+npm list package-name
+
+#Tree list packages
+npm list --depth 0 #Installed package only
+npm list --depth 1 #Installed package with it's immediate dpendencies
