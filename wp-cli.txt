@@ -7,6 +7,12 @@ Get option:
     
 Get specific event:
     wp cron event list | grep 'wpdef_sec_key_gen'
+    
+Get WP-Cron schedule list:
+    wp cron schedule list
+    
+Run specific WP-Cron immediately:
+    wp cron event run <cron_hook_name> #for e.g. replace <cron_hook_name> placeholder with real hook name like action_scheduler_run_queue
 
 Check WP-Cron working:
     wp cron test
