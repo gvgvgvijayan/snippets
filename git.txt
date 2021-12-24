@@ -25,3 +25,7 @@ Aborting the merge:
 	
 List branches having the given commit ID:
 	git branch -r --contains <commit_id>
+	
+Git merge remote branch to local:
+	git fetch origin remote_branch_name
+	git merge origin/remote_branch_name
