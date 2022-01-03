@@ -29,3 +29,6 @@ List branches having the given commit ID:
 Git merge remote branch to local:
 	git fetch origin remote_branch_name
 	git merge origin/remote_branch_name
+
+Git get authors list sort by commit-count:
+	git shortlog -n -s -- filepath
