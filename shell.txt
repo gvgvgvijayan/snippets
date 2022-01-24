@@ -10,3 +10,7 @@
 	
 #Copy last command to clipboard
 	fc -ln -1 | xclip -sel clip
+	
+#Scan wireless network with its quality, encryption, frequency & ESSID
+	sudo iwlist scanning
+	
