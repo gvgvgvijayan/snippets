@@ -14,3 +14,5 @@
 #Scan wireless network with its quality, encryption, frequency & ESSID
 	sudo iwlist scanning
 	
+#Convert unix timestamp to date string
+	date -d @1643188311
