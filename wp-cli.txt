@@ -29,3 +29,7 @@ Get Transient list:
 
 Option pattern search, unserialize and export name & value as JSON:
     wp option list --search="wp_defender_config_*" --unserialize --format=json >> ~/Downloads/op.json
+
+Fuzzy match and delete plugin:
+    #Here the string 'defender' is matches with the plugin slug name
+    wp plugin uninstall  --deactivate $(wp plugin list --field=name | grep 'defender')
