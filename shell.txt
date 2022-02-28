@@ -11,6 +11,9 @@
 #Copy last command to clipboard
 	fc -ln -1 | xclip -sel clip
 	
+#Copy search term matching filepath to clipboard
+	grep -ril "Lockout_Ip" ./src | xclip -sel clip
+	
 #Scan wireless network with its quality, encryption, frequency & ESSID
 	sudo iwlist scanning
 	
