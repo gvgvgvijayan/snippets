@@ -1,5 +1,5 @@
 Call a site with different user-agent & IP address:
-  curl -H "User-Agent:MJ12Bot" -H "X-Forwarded-For:127.0.0.2" http://single.test/
+  curl -H "User-Agent:MJ12Bot" -H "X-Forwarded-For:88.193.76.48" http://single.test/
   
 Call a WP site for login and fail multiple times with fack ip:
   curl -H "X-Forwarded-For:9.98.186.68" --data "log=ADMIN&pwd=PASSWORD" "single.test/wp-login.php?[1-3]"
