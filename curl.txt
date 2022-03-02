@@ -5,3 +5,6 @@ Call a WP site for login and fail multiple times with fack ip:
   curl -H "X-Forwarded-For:9.98.186.68" --data "log=ADMIN&pwd=PASSWORD" "single.test/wp-login.php?[1-3]"
   #https://gist.github.com/antics/4079584
   #https://sick.codes/bashcron-automatically-log-wordpress-via-curlwget/
+
+WP 404 call multiple times:
+  curl  -H "X-Forwarded-For:88.193.76.28" "http://single.test/404?[1-3]" > /dev/null 
