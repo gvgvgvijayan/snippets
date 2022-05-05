@@ -32,3 +32,6 @@ Git merge remote branch to local:
 
 Git get authors list sort by commit-count:
 	git shortlog -n -s -- filepath
+
+Git diff exclude files:
+	git diff -- . ':!assets/' ':!extra/' ':!*.pot'
