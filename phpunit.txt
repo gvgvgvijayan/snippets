@@ -1,2 +1,2 @@
 Filter:
-  ./vendor/bin/phpunit -c phpunit.xml --filter test_method_name
+  ./vendor/bin/phpunit -v -c phpunit.xml --filter test_method_name
