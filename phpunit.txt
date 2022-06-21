@@ -1,2 +1,5 @@
 Filter:
   ./vendor/bin/phpunit -v -c phpunit.xml --filter test_method_name
+
+Test Suite:
+  ./vendor/bin/phpunit -v --testsuite "two-fa"
