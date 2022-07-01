@@ -19,3 +19,8 @@
 	
 #Convert unix timestamp to date string
 	date -d @1643188311
+
+#Shortcuts
+CTRL + P => Previous command
+CTRL + N => Next command
+CTRL + U => Delete the typed line
