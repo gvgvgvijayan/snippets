@@ -35,3 +35,6 @@
 
 # Git diff exclude files:
 	git diff -- . ':!assets/' ':!extra/' ':!*.pot'
+	
+# Git commit content search:
+	git log -S "'wd_plugin/theme_changed"
