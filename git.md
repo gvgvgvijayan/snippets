@@ -38,3 +38,6 @@
 	
 # Git commit content search:
 	git log -S "'wd_plugin/theme_changed"
+	
+# Git commit content regex search:
+	git log -G"do_action\( 'wd_plugin/theme_changed'"
