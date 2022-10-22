@@ -11,3 +11,11 @@
 
 # Linting:
 `/usr/bin/php7.2 -l src/bootstrap.php free/bootstrap.php src/traits/defender-bootstrap.php`
+
+---
+# PHPCBF
+## Targeting only specific rules
+- First list all sniffs for crossreference
+  - `./vendor/bin/phpcs --standard=phpcs.ruleset.xml  -e`
+- Choose valid sniffs which are need to be automatically rectified
+  - `vendor/bin/phpcbf --standard=phpcs.ruleset.xml --sniffs="NeutronStandard.AssignAlign.DisallowAssignAlign,NeutronStandard.Arrays.DisallowLongformArray,Generic.WhiteSpace.ScopeIndent,WordPress.WP.I18n" src/path/filename.php`
