@@ -41,3 +41,9 @@
 	
 # Git commit content regex search:
 	git log -G"do_action\( 'wd_plugin/theme_changed'"
+	
+# Force update last commit message:
+	`git commit --amend -m "New commit message."`
+	`git push --force <remoteName> <branchName>`
+	
+	- Reference: https://linuxize.com/post/change-git-commit-message/
