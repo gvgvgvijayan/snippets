@@ -18,4 +18,4 @@
 - First list all sniffs for crossreference
   - `./vendor/bin/phpcs --standard=phpcs.ruleset.xml  -e`
 - Choose valid sniffs which are need to be automatically rectified
-  - `vendor/bin/phpcbf --standard=phpcs.ruleset.xml --sniffs="NeutronStandard.AssignAlign.DisallowAssignAlign,NeutronStandard.Arrays.DisallowLongformArray,Generic.WhiteSpace.ScopeIndent,WordPress.WP.I18n,Squiz.ControlStructures.ControlSignature,WordPress.WhiteSpace.ControlStructureSpacing,PSR2.ControlStructures.ElseIfDeclaration" src/path/filename.php`
+  - `vendor/bin/phpcbf --standard=phpcs.ruleset.xml --sniffs="NeutronStandard.AssignAlign.DisallowAssignAlign,NeutronStandard.Arrays.DisallowLongformArray,Generic.WhiteSpace.ScopeIndent,WordPress.WP.I18n,Squiz.ControlStructures.ControlSignature,WordPress.WhiteSpace.ControlStructureSpacing,PSR2.ControlStructures.ElseIfDeclaration,Squiz.WhiteSpace.SuperfluousWhitespace" src/path/filename.php`
