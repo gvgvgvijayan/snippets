@@ -47,3 +47,8 @@
 	`git push --force <remoteName> <branchName>`
 	
 	- Reference: https://linuxize.com/post/change-git-commit-message/
+	
+# List merge conflicted files:
+	`git diff --name-only --diff-filter=U --relative`
+	
+	- Reference: https://stackoverflow.com/a/10874862/1593365
