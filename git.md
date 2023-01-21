@@ -52,3 +52,12 @@
 	`git diff --name-only --diff-filter=U --relative`
 	
 	- Reference: https://stackoverflow.com/a/10874862/1593365
+	
+# Git clone repository to another repository
+```
+git remote rename origin upstream
+git remote add origin https://github.com/myGitHubProfile/project.git
+```
+	
+- Reference: https://stackoverflow.com/questions/65485779/change-remote-origin-to-upstream-with-git/65485900#65485900
+	
