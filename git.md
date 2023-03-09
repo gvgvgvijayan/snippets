@@ -1,5 +1,4 @@
 # Repo Sync:
-	https://stackoverflow.com/a/52828742/1593365
 	Git CMD for repo sync:
 	git remote add protected_repo https://github.com/theirusername/their_repo.git
 	git fetch parent_repo
@@ -10,6 +9,7 @@
 	git merge parent_repo/branch-name
 	
 	git push -u origin branch-name
+- Reference: https://stackoverflow.com/a/52828742/1593365
 
 # Git get file history:
 	git log --follow -p --stat ./src/component/store/index.js
@@ -43,21 +43,25 @@
 	git log -G"do_action\( 'wd_plugin/theme_changed'"
 	
 # Force update last commit message:
-	`git commit --amend -m "New commit message."`
-	`git push --force <remoteName> <branchName>`
-	
-	- Reference: https://linuxize.com/post/change-git-commit-message/
+```
+git commit --amend -m "New commit message."
+git push --force <remoteName> <branchName>
+```
+
+- Reference: https://linuxize.com/post/change-git-commit-message/
 	
 # List merge conflicted files:
-	`git diff --name-only --diff-filter=U --relative`
-	
-	- Reference: https://stackoverflow.com/a/10874862/1593365
+```
+git diff --name-only --diff-filter=U --relative
+```
+
+- Reference: https://stackoverflow.com/a/10874862/1593365
 	
 # Git clone repository to another repository
 ```
 git remote rename origin upstream
 git remote add origin https://github.com/myGitHubProfile/project.git
 ```
-	
+
 - Reference: https://stackoverflow.com/questions/65485779/change-remote-origin-to-upstream-with-git/65485900#65485900
 	
