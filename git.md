@@ -33,6 +33,10 @@
 # Git get authors list sort by commit-count:
 	git shortlog -n -s -- filepath
 
+# Git log of specific author:
+	git log --author="gvgvgvijayan"
+- Reference: https://stackoverflow.com/questions/4259996/how-can-i-view-a-git-log-of-just-one-users-commits
+
 # Git diff exclude files:
 	git diff -- . ':!assets/' ':!extra/' ':!*.pot'
 	
