@@ -9,6 +9,9 @@
 # ERROR: the "WordPress" coding standard is not installed.
 `phpcs --config-set installed_paths $HOME/.config/composer/vendor/wp-coding-standards/wpcs,$HOME/.config/composer/vendor/phpcompatibility/php-compatibility,$HOME/.config/composer/vendor/phpcompatibility/phpcompatibility-paragonie,$HOME/.config/composer/vendor/phpcompatibility/phpcompatibility-wp`
 
+# CS only for security:
+` vendor/bin/phpcs --standard=WordPress --sniffs="WordPress.Security.EscapeOutput"  -s  src/view/email/  `
+
 # Linting:
 `/usr/bin/php7.2 -l src/bootstrap.php free/bootstrap.php src/traits/defender-bootstrap.php`
 
