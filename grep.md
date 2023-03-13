@@ -9,3 +9,10 @@
   
 # Include Specific file type:
 `grep -rin --include=\*.php  --exclude-dir={wp-content,.history} "cron_schedules`
+
+# Trim matching lines:
+- Useful to search in minified asset files
+
+`grep -rinoE  ".{0,10}admin.php\?page=wdf-scan&view=issues.{0,10}"`
+
+Reference: https://stackoverflow.com/questions/2034799/how-to-truncate-long-matching-lines-returned-by-grep-or-ack
