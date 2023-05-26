@@ -68,4 +68,11 @@ git remote add origin https://github.com/myGitHubProfile/project.git
 ```
 
 - Reference: https://stackoverflow.com/questions/65485779/change-remote-origin-to-upstream-with-git/65485900#65485900
+
+# Git undo local commit keep changes
+```
+git reset HEAD^
+```
+
+- Reference: https://stackoverflow.com/questions/15772134/can-i-delete-a-git-commit-but-keep-the-changes/15772171#15772171
 	
