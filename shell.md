@@ -23,6 +23,9 @@
 # Rsync
 	sudo rsync -avuP --delete source_dir destination_dir
  	sudo rsync -avuP --delete /home/vijayan/Documents/my_files/users/ .
+
+# Diff
+	diff -qr /home/vijayan/Documents/my_files/users/ ./
  
 # Shortcuts
 	CTRL + P => Previous command
