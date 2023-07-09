@@ -20,6 +20,10 @@
 # Convert unix timestamp to date string
 	date -d @1643188311
 
+# Rsync
+	sudo rsync -avuP --delete source_dir destination_dir
+ 	sudo rsync -avuP --delete /home/vijayan/Documents/my_files/users/ .
+ 
 # Shortcuts
 	CTRL + P => Previous command
 	CTRL + N => Next command
