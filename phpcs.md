@@ -22,3 +22,7 @@
   - `./vendor/bin/phpcs --standard=phpcs.ruleset.xml  -e`
 - Choose valid sniffs which are need to be automatically rectified
   - `vendor/bin/phpcbf --standard=phpcs.ruleset.xml --sniffs="NeutronStandard.AssignAlign.DisallowAssignAlign,NeutronStandard.Arrays.DisallowLongformArray,Generic.WhiteSpace.ScopeIndent,Generic.WhiteSpace.DisallowSpaceIndent,Generic.Functions.FunctionCallArgumentSpacing,WordPress.WP.I18n,Squiz.ControlStructures.ControlSignature,WordPress.WhiteSpace.ControlStructureSpacing,WordPress.WhiteSpace.OperatorSpacing,WordPress.Arrays.ArrayIndentation,WordPress.Arrays.CommaAfterArrayItem,PSR2.ControlStructures.ElseIfDeclaration,Squiz.WhiteSpace.SuperfluousWhitespace,Squiz.Strings.ConcatenationSpacing,PEAR.Functions.FunctionCallSignature" src/path/filename.php`
+
+---
+# PHPCS git modified file
+`vendor/bin/phpcs --standard=phpcs.ruleset.xml  -s  $(git ls-files -m **/*.php)`
