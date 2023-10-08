@@ -23,6 +23,7 @@
 # Rsync
 	sudo rsync -avuP --delete source_dir destination_dir
  	sudo rsync -avuP --delete /home/vijayan/Documents/my_files/users/ .
+  	sudo rsync -avuP /run/media/vijayan/100c7b6f-e4b7-4c87-a278-811080a5cde6/home/vijayan/Documents/my_files/users/ /run/media/vijayan/vijayan1tb/media/users/
 
 # Diff
 	diff -qr /home/vijayan/Documents/my_files/users/ ./
