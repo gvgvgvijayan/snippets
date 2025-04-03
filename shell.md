@@ -24,7 +24,8 @@
 	sudo rsync -avuP --delete source_dir destination_dir
  	sudo rsync -avuP --delete /home/vijayan/Documents/my_files/users/ .
   	sudo rsync -avuP /run/media/vijayan/100c7b6f-e4b7-4c87-a278-811080a5cde6/home/vijayan/Documents/my_files/users/ /run/media/vijayan/vijayan1tb/media/users/
-   	rsync --ignore-existing -avzh --delete --progress /run/media/vijayan/vijayan1tb/rsync/* ./rsync
+   	~~rsync --ignore-existing -avzh --delete --progress /run/media/vijayan/vijayan1tb/rsync/* ./rsync~~
+    	rsync -avh --delete --progress /media/vijayan/vg_1tb_kngstn/rsync/ ./rsync/
 
 # Diff
 	diff -qr /home/vijayan/Documents/my_files/users/ ./
