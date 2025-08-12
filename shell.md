@@ -34,3 +34,35 @@
 	CTRL + P => Previous command
 	CTRL + N => Next command
 	CTRL + U => Delete the typed line
+
+# Delete Unused WordPress Patterns
+
+This snippet helps you find and delete pattern files that are not referenced anywhere in your theme.
+
+## Show List of Unused Patterns (Safe Mode)
+
+This command lists all pattern files that are safe to delete. Always run this first to verify.
+
+    comm -23 <(ls patterns | sort) <(grep -horiE "$(ls patterns | cut -d'.' -f1 | sed 's/^/hospital-block-theme\//' | tr '\n' '|' | sed 's/|$//')" . --exclude-dir=node_modules --exclude-dir=patterns --exclude=package-lock.json --exclude=style.css | cut -d'/' -f2 | sed 's/$/.php/' | sort -u)
+
+## Remove Unused Patterns (Destructive)
+
+After verifying the list, this command will permanently delete the unused files.
+
+    comm -23 <(ls patterns | sort) <(grep -horiE "$(ls patterns | cut -d'.' -f1 | sed 's/^/hospital-block-theme\//' | tr '\n' '|' | sed 's/|$//')" . --exclude-dir=node_modules --exclude-dir=patterns --exclude=package-lock.json --exclude=style.css | cut -d'/' -f2 | sed 's/$/.php/' | sort -u) | xargs -I {} rm -v patterns/{}
+
+---
+
+## Enhanced Reusable Version
+
+For use in other projects, you can use variables for the directory and namespace.
+
+    # --- Config ---
+    PATTERN_DIR="patterns"
+    NAMESPACE="your-theme-namespace"
+
+    # --- Show list ---
+    comm -23 <(ls "$PATTERN_DIR" | sort) <(grep -horiE "$(/bin/ls "$PATTERN_DIR" | cut -d'.' -f1 | sed "s/^/$NAMESPACE\//" | tr '\n' '|' | sed 's/|$//')" . --exclude-dir=node_modules --exclude-dir="$PATTERN_DIR" | cut -d'/' -f2 | sed 's/$/.php/' | sort -u)
+
+    # --- Remove files ---
+    comm -23 <(ls "$PATTERN_DIR" | sort) <(grep -horiE "$(/bin/ls "$PATTERN_DIR" | cut -d'.' -f1 | sed "s/^/$NAMESPACE\//" | tr '\n' '|' | sed 's/|$//')" . --exclude-dir=node_modules --exclude-dir="$PATTERN_DIR" | cut -d'/' -f2 | sed 's/$/.php/' | sort -u) | xargs -I {} rm -v "$PATTERN_DIR"/{}
