@@ -66,3 +66,7 @@ For use in other projects, you can use variables for the directory and namespace
 
     # --- Remove files ---
     comm -23 <(ls "$PATTERN_DIR" | sort) <(grep -horiE "$(/bin/ls "$PATTERN_DIR" | cut -d'.' -f1 | sed "s/^/$NAMESPACE\//" | tr '\n' '|' | sed 's/|$//')" . --exclude-dir=node_modules --exclude-dir="$PATTERN_DIR" | cut -d'/' -f2 | sed 's/$/.php/' | sort -u) | xargs -I {} rm -v "$PATTERN_DIR"/{}
+
+# PDF To Webp Conversion
+
+`magick -density 150 enterprise-block-editor.pdf -resize 800x -quality 85 enterprise-block-editor.webp`
