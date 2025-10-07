@@ -4,4 +4,4 @@
 
 # Image to text:
 
-`tesseract "example.png" text`
+`tesseract example.png text`
