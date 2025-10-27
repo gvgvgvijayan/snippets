@@ -20,6 +20,10 @@
 - https://imagemagick.org/script/command-line-processing.php#geometry
 - https://imagemagick.org/script/command-line-options.php#crop
 
+## Source destination different aspect ratio with less distortion:
+
+`convert blog-card.png -resize 768x432^ -gravity center -crop 768x432+0+0 +repage blog-card.webp`
+
 # Bulk conversion:
 
 `mogrify -format webp *.png`
