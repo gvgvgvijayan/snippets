@@ -11,6 +11,10 @@
 
 `convert department-single.png -crop 1x4@ +repage department-single-part-%d.webp`
 
+## Crop upto specific height:
+
+`convert branch-single.webp -crop x1080+0+0 branch-single-x1080.webp`
+
 # Bulk conversion:
 
 `mogrify -format webp *.png`
