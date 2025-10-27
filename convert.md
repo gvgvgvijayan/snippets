@@ -15,6 +15,11 @@
 
 `convert branch-single.webp -crop x1080+0+0 branch-single-x1080.webp`
 
+### References:
+
+- https://imagemagick.org/script/command-line-processing.php#geometry
+- https://imagemagick.org/script/command-line-options.php#crop
+
 # Bulk conversion:
 
 `mogrify -format webp *.png`
