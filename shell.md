@@ -70,3 +70,7 @@ For use in other projects, you can use variables for the directory and namespace
 # PDF To Webp Conversion
 
 `magick -density 150 enterprise-block-editor.pdf -resize 800x -quality 85 enterprise-block-editor.webp`
+
+`magick -density 300 wordpress-vip-architecture-and-tooling.pdf -resize 800x -quality 80 wordpress-vip-architecture-and-tooling.webp`
+
+Note: density 300 filesize is not too much higher than 150 so using 300 looks win-win in the perspective of size vs depth & clarity
