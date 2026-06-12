@@ -1,0 +1,17 @@
+<kdenlivetitle LC_NUMERIC="C" duration="300" height="1080" out="300" width="1920">
+ <item type="QGraphicsTextItem" z-index="0">
+  <position x="57" y="946">
+   <transform>1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content alignment="0" box-height="77" box-width="1828.97" font="Arial Black" font-color="255,255,255,255" font-italic="0" font-pixel-size="54" font-underline="0" font-weight="400" letter-spacing="0" shadow="0;#64000000;3;3;3" tab-width="80" typewriter="1;2;1;0;0">Configuring Homepage Content: Events, Blogs &amp; Departments</content>
+ </item>
+ <item type="QGraphicsRectItem" z-index="-1">
+  <position x="44" y="940">
+   <transform zoom="100">1,0,0,0,1,0,0,0,1</transform>
+  </position>
+  <content brushcolor="0,0,0,255" pencolor="0,0,0,255" penwidth="0" rect="0,0,1860,90"/>
+ </item>
+ <startviewport rect="0,0,1920,1080"/>
+ <endviewport rect="0,0,1920,1080"/>
+ <background color="0,0,0,0"/>
+</kdenlivetitle>
