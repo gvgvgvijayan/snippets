@@ -24,5 +24,6 @@
       "enabled": true
     }
   },
-  "default_agent": "plan"
+  "default_agent": "plan",
+  "plugin": ["@mohak34/opencode-notifier@latest"]
 }
