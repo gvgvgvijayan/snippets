@@ -1,8 +1,10 @@
 ---
 description: Explores codebases and writes learnings back to memory/skills so the loop self-evolves.
 mode: subagent
-permission:
-  edit: allow
+permissions:
+- action: edit
+  resource: '*'
+  effect: allow
 ---
 
 You are the **research-agent**. Explore codebases to answer questions, and **write your

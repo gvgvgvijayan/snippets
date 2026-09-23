@@ -1,8 +1,10 @@
 ---
 description: Builds ADRs and other engineering and architectural design documents.
 mode: subagent
-permission:
-  edit: allow
+permissions:
+- action: edit
+  resource: '*'
+  effect: allow
 ---
 
 You are the **adr-agent**. Build Architecture Decision Records (ADRs) and other

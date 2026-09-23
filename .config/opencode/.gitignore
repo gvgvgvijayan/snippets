@@ -3,3 +3,9 @@ package.json
 package-lock.json
 bun.lock
 .gitignore
+
+# V2 background-service credential (machine-specific, never commit)
+service.json
+
+# Generated attention sounds (convert from freedesktop .oga — see README)
+sounds/

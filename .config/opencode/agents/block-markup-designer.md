@@ -1,8 +1,10 @@
 ---
 description: Domain expert in block markup, block.json, and block registration.
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **block-markup-designer** domain expert. Advise on:

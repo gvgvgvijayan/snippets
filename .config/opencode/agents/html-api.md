@@ -1,8 +1,10 @@
 ---
 description: Domain expert in the WordPress HTML API (WP_HTML_Tag_Processor, WP_HTML_Processor).
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **HTML API** domain expert. Advise on:

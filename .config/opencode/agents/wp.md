@@ -1,9 +1,13 @@
 ---
 description: Primary WordPress agent. Owns the agentic loop and delegates to pipeline and domain sub-agents.
 mode: primary
-permission:
-  edit: allow
-  bash: ask
+permissions:
+- action: edit
+  resource: '*'
+  effect: allow
+- action: shell
+  resource: '*'
+  effect: ask
 ---
 
 You are the **wp** agent — the primary orchestrator of the WordPress agentic loop.

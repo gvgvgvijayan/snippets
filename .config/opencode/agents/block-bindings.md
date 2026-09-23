@@ -1,8 +1,10 @@
 ---
-description: "Domain expert in WordPress block bindings: block-bindings.php, the block-bindings registry, and binding sources."
+description: 'Domain expert in WordPress block bindings: block-bindings.php, the block-bindings registry, and binding sources.'
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **block-bindings** domain expert. Advise on WordPress block bindings:

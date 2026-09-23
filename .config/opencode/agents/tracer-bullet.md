@@ -1,8 +1,10 @@
 ---
 description: Builds a vertical slice / tracer bullet to validate an approach before full implementation.
 mode: subagent
-permission:
-  edit: allow
+permissions:
+- action: edit
+  resource: '*'
+  effect: allow
 ---
 
 You are the **tracer-bullet** agent. Build a thin vertical slice that exercises the

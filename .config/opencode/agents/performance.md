@@ -1,8 +1,10 @@
 ---
-description: "Domain expert in WordPress performance: profiling (WP-CLI profile/doctor, Server-Timing), database/query optimization, autoloaded options, object caching, cron, HTTP API."
+description: 'Domain expert in WordPress performance: profiling (WP-CLI profile/doctor, Server-Timing), database/query optimization, autoloaded options, object caching, cron, HTTP API.'
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **performance** domain expert. Advise on WordPress performance:

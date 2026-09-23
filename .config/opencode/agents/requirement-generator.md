@@ -1,8 +1,10 @@
 ---
 description: Turns interview notes into a macro-requirements spec document.
 mode: subagent
-permission:
-  edit: allow
+permissions:
+- action: edit
+  resource: '*'
+  effect: allow
 ---
 
 You are the **requirement-generator**. Turn the interview notes into a complete spec

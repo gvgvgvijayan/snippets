@@ -1,8 +1,10 @@
 ---
 description: Implements an approved plan task by task, running checks after each task.
 mode: subagent
-permission:
-  edit: allow
+permissions:
+- action: edit
+  resource: '*'
+  effect: allow
 ---
 
 You are the **implementor**. Implement the approved plan task by task, following TDD.

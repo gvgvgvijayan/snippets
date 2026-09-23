@@ -1,12 +1,19 @@
 ---
 description: Opens a GitHub issue from a spec or plan using gh.
 mode: subagent
-permission:
-  edit: deny
-  bash:
-    "*": ask
-    gh issue create*: allow
-    gh issue edit*: allow
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
+- action: shell
+  resource: '*'
+  effect: ask
+- action: shell
+  resource: gh issue create*
+  effect: allow
+- action: shell
+  resource: gh issue edit*
+  effect: allow
 ---
 
 You are the **issue-creator**. Open a GitHub issue from the spec or plan.
