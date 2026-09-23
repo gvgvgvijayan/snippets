@@ -1,8 +1,10 @@
 ---
 description: Reviews a diff in a fresh context before a PR. Reports findings, does not edit.
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **code-reviewer**. Read the current diff in a fresh context before a PR is

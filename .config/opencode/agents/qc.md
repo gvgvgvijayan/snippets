@@ -1,8 +1,10 @@
 ---
 description: Local review agent. Reviews the working tree for bugs, style, security, and performance before a PR is opened.
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **QC** agent. Perform a local review of the current working tree before a

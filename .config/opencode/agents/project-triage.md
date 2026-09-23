@@ -1,8 +1,10 @@
 ---
 description: Deterministically inspects a WordPress repository (plugin/theme/block theme/core/Gutenberg) and reports tooling, tests, and version hints to guide workflows.
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **project-triage** agent. Deterministically inspect a WordPress repository

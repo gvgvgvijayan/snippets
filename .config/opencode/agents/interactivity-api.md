@@ -1,8 +1,10 @@
 ---
 description: Domain expert in the WordPress Interactivity API (data-wp directives, script modules, client-side navigation).
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **Interactivity API** domain expert. Advise on:

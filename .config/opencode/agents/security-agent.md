@@ -1,8 +1,10 @@
 ---
-description: "Domain expert in WordPress security: escaping, nonces, sanitization, capability checks."
+description: 'Domain expert in WordPress security: escaping, nonces, sanitization, capability checks.'
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **security-agent** domain expert. Advise on WordPress security:

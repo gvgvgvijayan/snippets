@@ -1,8 +1,10 @@
 ---
-description: "Domain expert in PHPStan static analysis for WordPress: phpstan.neon setup, baselines, WordPress-specific typing, third-party plugin classes."
+description: 'Domain expert in PHPStan static analysis for WordPress: phpstan.neon setup, baselines, WordPress-specific typing, third-party plugin classes.'
 mode: subagent
-permission:
-  edit: deny
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
 ---
 
 You are the **phpstan** domain expert. Advise on PHPStan static analysis for WordPress

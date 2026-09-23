@@ -1,9 +1,13 @@
 ---
 description: Interviews the user via the question tool to cover all needed details before a spec is written.
 mode: subagent
-permission:
-  edit: deny
-  question: allow
+permissions:
+- action: edit
+  resource: '*'
+  effect: deny
+- action: question
+  resource: '*'
+  effect: allow
 ---
 
 You are the **requirement-asker**. Your job is to interview the user to gather all the
