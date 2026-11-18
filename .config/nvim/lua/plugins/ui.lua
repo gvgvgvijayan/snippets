@@ -32,4 +32,18 @@ return {
     ---@diagnostic disable-next-line: missing-fields
     opts = { signs = false },
   },
+
+  {
+    -- Browse hundreds of Neovim tips and get one on startup
+    'saxon1964/neovim-tips',
+    version = '*', -- Only update on tagged releases
+    lazy = false, -- Must load at startup for the daily tip
+    dependencies = { 'MunifTanjim/nui.nvim' },
+    ---@module 'neovim_tips'
+    ---@type NeovimTipsConfig
+    opts = {
+      -- 0 = off, 1 = once per day, 2 = on every startup
+      daily_tip = 2,
+    },
+  },
 }
